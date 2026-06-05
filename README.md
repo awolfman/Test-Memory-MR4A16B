@@ -12,6 +12,8 @@ MR4A16B - 16Mb 16-bit I/O Parallel Interface MRAM.
 Тестирование проводится путём записи случайных чисел в каждую пару микросхем.
 Затем выполняется чтение и сравниваются контрольные суммы по MD-5.
 Определяется не исправная микросхема и выводится её номер.
+По окончании тестирования, в случае успешного завершения теста, происходит форматирование
+модуля MRAM  в ext2.
 
 The MRAM chips are located on a SO-DIMM board.
 There are 8 chips on each side. The module capacity is 32 MB.
@@ -23,3 +25,5 @@ Then the chips are read and their MD-5 checksums are compared.
 Testing is performed by writing random numbers to each pair of microchips.
 Then the chip is read and the MD-5 checksums are compared.
 The faulty microchip is identified and its number is displayed.
+
+Upon successful completion of the test, the MRAM module is formatted as ext2.
